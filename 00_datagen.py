@@ -61,7 +61,7 @@ class BankDataGen:
         self.connectionName = connectionName
 
 
-    def dataGen(self, spark, shuffle_partitions_requested = 5, partitions_requested = 2, data_rows = 10000):
+    def dataGen(self, spark, shuffle_partitions_requested = 2, partitions_requested = 2, data_rows = 10000):
         """
         Method to create credit card transactions in Spark Df
         """
@@ -138,11 +138,11 @@ class BankDataGen:
         """
 
         try:
-            df.writeTo("{0}.BANKING_TRANSACTIONS_{1}".format(self.dbname, self.username))\
+            df.writeTo("{0}.CML_INTRO_{1}".format(self.dbname, self.username))\
               .using("iceberg").tableProperty("write.format.default", "parquet").append()
 
         except:
-            df.writeTo("{0}.BANKING_TRANSACTIONS_{1}".format(self.dbname, self.username))\
+            df.writeTo("{0}.CML_INTRO_{1}".format(self.dbname, self.username))\
                 .using("iceberg").tableProperty("write.format.default", "parquet").createOrReplace()
 
 
@@ -157,7 +157,7 @@ class BankDataGen:
 def main():
 
     USERNAME = os.environ["PROJECT_OWNER"]
-    DBNAME = "BNK_MLOPS_DEMO"
+    DBNAME = "CML_INTRO"
     STORAGE = "s3a://goes-se-sandbox01"
     CONNECTION_NAME = "se-aw-mdl"
 
