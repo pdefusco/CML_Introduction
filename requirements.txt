@@ -14,6 +14,7 @@ nltk
 huggingface_hub
 tensorflow
 torch
-apache-sedona=1.5.1
+apache-sedona==1.5.1
 geopandas==0.14.3
 folium==0.16.0
+seaborn==0.13.2
