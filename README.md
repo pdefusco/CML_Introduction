@@ -84,15 +84,11 @@ In this introductory session, you will become familiar with CML Projects, Runtim
 
 Copy the git repository URL to your clipboard and enter it in the Project Creation form:
 
-![alt text](img/labs00.png)
+![alt text](img/cmlintronewimg1.png)
 
 Add two Python 3.9 based runtimes, one with JupyterLab and the other with Workbench Editors. Select any edition that is available in your CML Workspace.
 
-![alt text](img/labs000.png)
-
-![alt text](img/labs01.png)
-
-![alt text](img/labs02.png)
+![alt text](img/cmlintronewimg2.png)
 
 ![alt text](img/labs03.png)
 
