@@ -96,7 +96,7 @@ Add two Python 3.9 based runtimes, one with JupyterLab and the other with Workbe
 
 Enter the project and familiarize yourself with the files that have been cloned automatically for you.
 
-![alt text](img/labs05.png)
+![alt text](img/cmlintronewimg3.png)
 
 
 ##### Session Deployment and Package Installation
